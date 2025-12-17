@@ -4,3 +4,19 @@ const inventory = [
   { name: "Banana", price: 10, quantity: 50 },
 ];
 // เริ่มเขียนโค้ดตรงนี้
+
+inventory[0].quantity = 200
+inventory.push({name: "Orage", price: 20, quantity: 300})
+console.log(inventory);
+
+
+let totalPrice = 0
+for(let item of inventory){
+  totalPrice += (item.price * item.quantity)
+}
+
+let result = `มูลค่ารวมของจำนวนสินค้าทั้งหมดในสต็อก ${totalPrice} บาท`
+console.log(result);
+
+
+
