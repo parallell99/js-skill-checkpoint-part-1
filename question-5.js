@@ -25,7 +25,7 @@ const calculateTotalPrice = (cart, disCount) => {
   for (let item of cart) {
     totalPrice += item.price * item.quantity;
   }
-  console.log(totalPrice);
+  
   if (disCount === "SALE50") {
     return totalPrice * 0.5;
   } else if (disCount === "SALE20") {
